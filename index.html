@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consejeros Universitarios - Tu Voz Importa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-user-tie"></i>
+                <span>Consejeros 2025</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#propuestas" class="nav-link">Propuestas</a></li>
+                <li><a href="#sobre-nosotros" class="nav-link">Quiénes Somos</a></li>
+                <li><a href="#redes" class="nav-link">Redes</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Tu Voz Importa</h1>
+            <p class="hero-subtitle">Elecciones de Consejeros Universitarios 2025</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollTo('propuestas')">Ver Propuestas</button>
+                <button class="btn btn-secondary" onclick="scrollTo('redes')">Síguenos</button>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+    </section>
+
+    <!-- PROPUESTAS -->
+    <section id="propuestas" class="propuestas">
+        <div class="container">
+            <h2 class="section-title">Nuestras Propuestas</h2>
+            <p class="section-subtitle">Lo que queremos lograr por ti</p>
+            
+            <div class="propuestas-grid">
+                <!-- Propuesta 1 -->
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Educación de Calidad</h3>
+                    <p>Mejora en la calidad de docencia y acceso a recursos educativos para todos los estudiantes.</p>
+                </div>
+
+                <!-- Propuesta 2 -->
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Becas y Ayudas</h3>
+                    <p>Programa de becas inclusivas y apoyo económico para estudiantes de bajos recursos.</p>
+                </div>
+
+                <!-- Propuesta 3 -->
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Salud Mental</h3>
+                    <p>Servicios de bienestar mental y espacios seguros para el desarrollo integral del estudiante.</p>
+                </div>
+
+                <!-- Propuesta 4 -->
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Tu Voz Escuchada</h3>
+                    <p>Canales reales de comunicación entre estudiantes, consejeros y administración.</p>
+                </div>
+
+                <!-- Propuesta 5 -->
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Actividades Estudiantiles</h3>
+                    <p>Más eventos culturales, deportivos y sociales para toda la comunidad.</p>
+                </div>
+
+                <!-- Propuesta 6 -->
+                <div class="propuesta-card">
+                    <div class="propuesta-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Universidad Sostenible</h3>
+                    <p>Iniciativas verdes y compromiso ambiental en el campus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobre-nosotros" class="sobre-nosotros">
+        <div class="container">
+            <h2 class="section-title">Quiénes Somos</h2>
+            <div class="equipo-grid">
+                <!-- Miembro 1 -->
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <div class="placeholder-avatar">JD</div>
+                    </div>
+                    <h3>Juan Díaz</h3>
+                    <p class="rol">Candidato Principal</p>
+                    <p class="bio">Estudiante de Ingeniería comprometido con mejorar la experiencia universitaria.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 2 -->
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <div class="placeholder-avatar">MR</div>
+                    </div>
+                    <h3>María Rodríguez</h3>
+                    <p class="rol">Coordinadora</p>
+                    <p class="bio">Líder en iniciativas estudiantiles y defensora de los derechos universitarios.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Miembro 3 -->
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <div class="placeholder-avatar">CL</div>
+                    </div>
+                    <h3>Carlos López</h3>
+                    <p class="rol">Tesorero</p>
+                    <p class="bio">Experto en finanzas estudiantiles y transparencia institucional.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REDES SOCIALES / CALL TO ACTION -->
+    <section id="redes" class="redes-sociales">
+        <div class="container">
+            <h2 class="section-title">Síguenos</h2>
+            <p class="section-subtitle">Mantente actualizado sobre la campaña</p>
+            
+            <div class="social-grid">
+                <a href="#" class="social-card instagram">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>@consejeros2025</p>
+                </a>
+
+                <a href="#" class="social-card tiktok">
+                    <i class="fab fa-tiktok"></i>
+                    <h3>TikTok</h3>
+                    <p>@consejeros2025</p>
+                </a>
+
+                <a href="#" class="social-card twitter">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter/X</h3>
+                    <p>@consejeros2025</p>
+                </a>
+            </div>
+
+            <div class="call-to-action">
+                <h3>¿Listo para hacer la diferencia?</h3>
+                <p>Votanos el [FECHA DE VOTACIÓN]</p>
+                <button class="btn btn-primary btn-large">Más Información</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Campaña Consejeros Universitarios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
