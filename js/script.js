@@ -19,12 +19,35 @@ navLinks.forEach(link => {
 });
 
 // FUNCIÓN DE SCROLL SUAVE
-function scrollTo(sectionId) {
+function scrollToSection(sectionId) {
+    console.log('🔍 Intentando ir a sección:', sectionId);
     const section = document.getElementById(sectionId);
+    
     if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        console.log('✅ Sección encontrada, navegando...');
+        section.scrollIntoView({ 
+            behavior: 'smooth', 
+            block: 'start',
+            inline: 'nearest'
+        });
+        
+        // Cerrar menú móvil si está abierto
+        const navMenu = document.querySelector('.nav-menu');
+        const hamburger = document.querySelector('.hamburger');
+        if (navMenu && navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
+        }
+    } else {
+        console.error('❌ No se encontró la sección:', sectionId);
     }
 }
+
+// Hacer la función global para que funcione desde HTML
+window.scrollToSection = scrollToSection;
+
+// Verificar que la función esté disponible
+console.log('✅ Función scrollToSection cargada:', typeof window.scrollToSection);
 
 // ANIMACIÓN AL HACER SCROLL
 const observerOptions = {
@@ -43,6 +66,12 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observar tarjetas de propuestas
 document.querySelectorAll('.propuesta-card').forEach(card => {
+    card.style.opacity = '0';
+    observer.observe(card);
+});
+
+// Observar propuestas detalladas
+document.querySelectorAll('.propuesta-detallada').forEach(card => {
     card.style.opacity = '0';
     observer.observe(card);
 });
@@ -78,12 +107,24 @@ function animateCounter(element, target, duration = 2000) {
 // EFECTOS DE INTERACTIVIDAD EN BOTONES
 const buttons = document.querySelectorAll('.btn');
 buttons.forEach(button => {
-    button.addEventListener('mouseenter', function(e) {
-        this.style.transform = 'translateY(-3px)';
+    // Solo aplicar efectos hover en dispositivos no táctiles
+    if (window.matchMedia('(hover: hover)').matches) {
+        button.addEventListener('mouseenter', function(e) {
+            this.style.transform = 'translateY(-3px)';
+        });
+        
+        button.addEventListener('mouseleave', function(e) {
+            this.style.transform = 'translateY(0)';
+        });
+    }
+    
+    // Efecto de click para móviles
+    button.addEventListener('touchstart', function(e) {
+        this.style.transform = 'scale(0.95)';
     });
     
-    button.addEventListener('mouseleave', function(e) {
-        this.style.transform = 'translateY(0)';
+    button.addEventListener('touchend', function(e) {
+        this.style.transform = 'scale(1)';
     });
 });
 
@@ -94,4 +135,5 @@ function validateEmail(email) {
 }
 
 // LOG INICIAL
-console.log('✨ Sitio de campaña cargado correctamente');
+console.log('✨ Planilla Azul Delta-Kairos - Sitio cargado correctamente');
+console.log('📱 Funcionalidad móvil y desktop activa');

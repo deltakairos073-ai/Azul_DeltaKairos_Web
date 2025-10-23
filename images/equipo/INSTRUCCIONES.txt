@@ -1,0 +1,50 @@
+📸 INSTRUCCIONES PARA AGREGAR FOTOS DEL EQUIPO
+==============================================
+
+PASO 1: Prepara las fotos
+--------------------------
+- Fotos cuadradas (recomendado: 500x500px o similar)
+- Formato: JPG o PNG
+- Peso: Máximo 500KB por foto
+- Fondos claros o profesionales preferibles
+
+PASO 2: Guarda las fotos con estos nombres
+-------------------------------------------
+📁 Guarda en esta carpeta (images/equipo/) con estos nombres:
+
+  miembro1.jpg  →  Foto del primer miembro
+  miembro2.jpg  →  Foto del segundo miembro
+  miembro3.jpg  →  Foto del tercer miembro
+  miembro4.jpg  →  Foto del cuarto miembro
+
+PASO 3: Edita la información en index.html
+-------------------------------------------
+Busca la sección "SOBRE NOSOTROS" y reemplaza:
+
+Para cada miembro, edita:
+  - <h3>Nombre Completo del Miembro X</h3>
+  - <p class="rol">Cargo o Rol</p>
+  - <p class="bio">Breve descripción...</p>
+
+Ejemplo:
+  <h3>Eduardo García Hernández</h3>
+  <p class="rol">Candidato Principal</p>
+  <p class="bio">Estudiante de Ingeniería Mecánica comprometido con la transparencia y la participación estudiantil.</p>
+
+PASO 4: Información Sugerida
+-----------------------------
+Por cada miembro incluye:
+  ✓ Nombre completo
+  ✓ Cargo en la planilla (Presidente, Secretario, etc.)
+  ✓ Breve descripción (1-2 líneas)
+  ✓ Carrera (opcional en la descripción)
+
+NOTAS:
+------
+- Las fotos aparecerán circulares con borde azul
+- Si no agregas una foto, se mostrará un avatar con iniciales
+- Las fotos tienen efecto hover (se agrandan ligeramente)
+- NO se incluyen redes sociales personales
+- El diseño es 2x2 en desktop, 1 columna en móvil
+
+¡Recuerda recargar la página después de agregar las fotos!

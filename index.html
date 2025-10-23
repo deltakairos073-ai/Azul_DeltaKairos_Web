@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consejeros Universitarios - Tu Voz Importa</title>
+    <title>Delta-Kairos | Planilla Azul - Ingeniería UASLP</title>
+    <link rel="icon" type="image/png" href="images/logo-deltakairos.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,8 +13,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <i class="fas fa-user-tie"></i>
-                <span>Consejeros 2025</span>
+                <img src="images/logo-deltakairos.png" alt="Delta-Kairos Logo" class="logo-img">
+                <span>Delta-Kairos</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#inicio" class="nav-link">Inicio</a></li>
@@ -32,11 +33,12 @@
     <!-- HERO SECTION -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">Tu Voz Importa</h1>
-            <p class="hero-subtitle">Elecciones de Consejeros Universitarios 2025</p>
+            <h1 class="hero-title">Transformando Nuestra Facultad: Una Visión para Ti</h1>
+            <p class="hero-subtitle">Somos la Planilla Azul Delta-Kairos y no solo somos candidatos, somos un plan de acción. Queremos construir una Facultad de Ingeniería moderna, inclusiva y que ponga tu bienestar primero.</p>
+            <p class="hero-description">Creemos en la participación estudiantil y en la transparencia total. Estas son nuestras propuestas, pensadas para tu futuro.</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" onclick="scrollTo('propuestas')">Ver Propuestas</button>
-                <button class="btn btn-secondary" onclick="scrollTo('redes')">Síguenos</button>
+                <button class="btn btn-primary" onclick="scrollToSection('propuestas')">Ver Propuestas</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('redes')">Síguenos</button>
             </div>
         </div>
         <div class="hero-background">
@@ -51,60 +53,104 @@
             <h2 class="section-title">Nuestras Propuestas</h2>
             <p class="section-subtitle">Lo que queremos lograr por ti</p>
             
-            <div class="propuestas-grid">
-                <!-- Propuesta 1 -->
-                <div class="propuesta-card">
-                    <div class="propuesta-icon">
-                        <i class="fas fa-book-open"></i>
+            <!-- Propuesta 1: Futuro Académico -->
+            <div class="propuesta-detallada">
+                <div class="propuesta-header">
+                    <div class="propuesta-icon-large">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <h3>Educación de Calidad</h3>
-                    <p>Mejora en la calidad de docencia y acceso a recursos educativos para todos los estudiantes.</p>
-                </div>
-
-                <!-- Propuesta 2 -->
-                <div class="propuesta-card">
-                    <div class="propuesta-icon">
-                        <i class="fas fa-coins"></i>
+                    <div>
+                        <h3>1. Tu Futuro Académico y Profesional</h3>
+                        <p class="propuesta-intro">Queremos que tu formación sea integral y te prepare para el mundo real.</p>
                     </div>
-                    <h3>Becas y Ayudas</h3>
-                    <p>Programa de becas inclusivas y apoyo económico para estudiantes de bajos recursos.</p>
                 </div>
+                <ul class="propuesta-list">
+                    <li>
+                        <strong>Formación de Vanguardia:</strong> Impulsaremos la capacitación continua de docentes y crearemos un <strong>repositorio digital</strong> con guías y exámenes anteriores para apoyarte en tu estudio.
+                    </li>
+                    <li>
+                        <strong>Más Allá del Salón de Clases:</strong> Desarrolla tus <em>soft skills</em>. Lanzaremos talleres de liderazgo, trabajo en equipo y asesorías de empleabilidad para que identifiques tus fortalezas.
+                    </li>
+                
+                </ul>
+            </div>
 
-                <!-- Propuesta 3 -->
-                <div class="propuesta-card">
-                    <div class="propuesta-icon">
-                        <i class="fas fa-heart"></i>
+            <!-- Propuesta 2: Campus Digno -->
+            <div class="propuesta-detallada">
+                <div class="propuesta-header">
+                    <div class="propuesta-icon-large">
+                        <i class="fas fa-building"></i>
                     </div>
-                    <h3>Salud Mental</h3>
-                    <p>Servicios de bienestar mental y espacios seguros para el desarrollo integral del estudiante.</p>
-                </div>
-
-                <!-- Propuesta 4 -->
-                <div class="propuesta-card">
-                    <div class="propuesta-icon">
-                        <i class="fas fa-microphone"></i>
+                    <div>
+                        <h3>2. Un Campus Digno y Funcional para Tu Bienestar</h3>
+                        <p class="propuesta-intro">Mereces estudiar en un espacio de calidad, seguro y moderno.</p>
                     </div>
-                    <h3>Tu Voz Escuchada</h3>
-                    <p>Canales reales de comunicación entre estudiantes, consejeros y administración.</p>
                 </div>
+                <ul class="propuesta-list">
+                    <li>
+                        <strong>Conexión Total:</strong> ¡Se acabó el Wi-Fi lento! Solicitaremos una revisión técnica completa para ampliar el alcance y la estabilidad de la red en toda la facultad.
+                    </li>
+                    <li>
+                        <strong>Tu Bienestar es Prioridad:</strong> Fortaleceremos los servicios de salud, optimizando el consultorio médico y, de forma prioritaria, garantizando <strong>acceso rápido y confidencial a la atención psicológica</strong>.
+                    </li>
+                    <li>
+                        <strong>Laboratorios del Siglo XXI:</strong> Impulsaremos la modernización de laboratorios y salas de cómputo, actualizando licencias, programas y equipos.
+                    </li>
+                    <li>
+                        <strong>¡Acceso Libre!</strong> Gestionaremos la <strong>ampliación de horarios</strong> en laboratorios y salas de cómputo para que puedas usarlos fuera de tus clases.
+                    </li>
+                    <li>
+                        <strong>Espacios Dignos:</strong> Implementaremos un plan de mantenimiento permanente para asegurar la limpieza, el abasto (agua, jabón, papel) y el funcionamiento de los baños, además de cuidar las áreas verdes y deportivas.
+                    </li>
+                </ul>
+            </div>
 
-                <!-- Propuesta 5 -->
-                <div class="propuesta-card">
-                    <div class="propuesta-icon">
+            <!-- Propuesta 3: Comunidad -->
+            <div class="propuesta-detallada">
+                <div class="propuesta-header">
+                    <div class="propuesta-icon-large">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>Actividades Estudiantiles</h3>
-                    <p>Más eventos culturales, deportivos y sociales para toda la comunidad.</p>
+                    <div>
+                        <h3>3. Comunidad, Transparencia y Pertenencia</h3>
+                        <p class="propuesta-intro">Creemos en una facultad donde todas y todos se sientan seguros, incluidos y representados.</p>
+                    </div>
                 </div>
+                <ul class="propuesta-list">
+                    <li>
+                        <strong>Cero Tolerancia:</strong> Impulsaremos una cultura de respeto. Implementaremos campañas y talleres para prevenir activamente cualquier forma de discriminación, acoso o violencia.
+                    </li>
+                    <li>
+                        <strong>Inclusión Real:</strong> Crearemos programas de apoyo y seguimiento para nuestros compañeros foráneos, asegurando que tengan el respaldo necesario para triunfar lejos de casa.
+                    </li>
+                    <li>
+                        <strong>Transparencia Total:</strong> ¡Se acabaron las decisiones a puerta cerrada! Rendiremos un <strong>informe mensual</strong> de todas las actividades del Consejo Universitario.
+                    </li>
+                    <li>
+                        <strong>Tu Voz Cuenta:</strong> Habilitaremos un espacio directo para que plantees tus problemáticas y aseguraremos que la comunidad participe en la definición de objetivos de la facultad.
+                    </li>
+                </ul>
+            </div>
 
-                <!-- Propuesta 6 -->
-                <div class="propuesta-card">
-                    <div class="propuesta-icon">
+            <!-- Propuesta 4: Compromiso Verde -->
+            <div class="propuesta-detallada">
+                <div class="propuesta-header">
+                    <div class="propuesta-icon-large">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <h3>Universidad Sostenible</h3>
-                    <p>Iniciativas verdes y compromiso ambiental en el campus.</p>
+                    <div>
+                        <h3>4. Nuestro Compromiso Verde</h3>
+                        <p class="propuesta-intro">Asumimos la responsabilidad de cuidar nuestro entorno.</p>
+                    </div>
                 </div>
+                <ul class="propuesta-list">
+                    <li>
+                        <strong>Cultura Ambiental:</strong> Crearemos programas, talleres y charlas sobre manejo de residuos, eficiencia energética y economía circular.
+                    </li>
+                    <li>
+                        <strong>Alianzas Estratégicas:</strong> Buscaremos alianzas con organizaciones expertas en medio ambiente para fortalecer nuestras acciones.
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -112,48 +158,52 @@
     <!-- SOBRE NOSOTROS -->
     <section id="sobre-nosotros" class="sobre-nosotros">
         <div class="container">
-            <h2 class="section-title">Quiénes Somos</h2>
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <p class="section-subtitle">Conoce a los integrantes de la Planilla Azul Delta-Kairos</p>
+            
             <div class="equipo-grid">
                 <!-- Miembro 1 -->
                 <div class="miembro-card">
                     <div class="miembro-image">
-                        <div class="placeholder-avatar">JD</div>
+                        <img src="images/equipo/miembro1.jpg" alt="Nombre Completo Miembro 1" class="foto-miembro">
+                        <div class="placeholder-avatar">M1</div>
                     </div>
-                    <h3>Juan Díaz</h3>
-                    <p class="rol">Candidato Principal</p>
-                    <p class="bio">Estudiante de Ingeniería comprometido con mejorar la experiencia universitaria.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
+                    <h3>Gema Scarlett Alcantara Chimal </h3>
+                    <p class="rol">Consejera propietaria</p>
+                    <p class="bio">"Diseñemos una comunidad tan brillante como las mentes que la habitan."</p>
                 </div>
 
                 <!-- Miembro 2 -->
                 <div class="miembro-card">
                     <div class="miembro-image">
-                        <div class="placeholder-avatar">MR</div>
+                        <img src="images/equipo/miembro2.jpg" alt="Nombre Completo Miembro 2" class="foto-miembro">
+                        <div class="placeholder-avatar">M2</div>
                     </div>
-                    <h3>María Rodríguez</h3>
-                    <p class="rol">Coordinadora</p>
-                    <p class="bio">Líder en iniciativas estudiantiles y defensora de los derechos universitarios.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
+                    <h3>José Eduardo Mercado Hernández</h3>
+                    <p class="rol">Consejero propietario</p>
+                    <p class="bio">"Como Presidente de Computer Society, siempre he querido liderar e impulsar la tecnología. Mi compromiso es llevar esa misma gestión y transparencia al Consejo."</p>
                 </div>
 
                 <!-- Miembro 3 -->
                 <div class="miembro-card">
                     <div class="miembro-image">
-                        <div class="placeholder-avatar">CL</div>
+                        <img src="images/equipo/miembro3.jpg" alt="Nombre Completo Miembro 3" class="foto-miembro">
+                        <div class="placeholder-avatar">M3</div>
                     </div>
-                    <h3>Carlos López</h3>
-                    <p class="rol">Tesorero</p>
-                    <p class="bio">Experto en finanzas estudiantiles y transparencia institucional.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <h3>Arantxa Elis Velázquez Vázquez </h3>
+                    <p class="rol">Consejera suplente</p>
+                    <p class="bio">"Generemos los puentes entre nuestras ideas y la facultad que merecemos."</p>
+                </div>
+
+                <!-- Miembro 4 -->
+                <div class="miembro-card">
+                    <div class="miembro-image">
+                        <img src="images/equipo/miembro4.jpg" alt="Nombre Completo Miembro 4" class="foto-miembro">
+                        <div class="placeholder-avatar">M4</div>
                     </div>
+                    <h3>Josué Maximiliano Gómez Delgado</h3>
+                    <p class="rol">Consejero suplente</p>
+                    <p class="bio">"Soy un aliado en el Consejo. Listo para apoyar, gestionar y asegurar que el trabajo de la planilla se cumpla con dedicación y constancia."</p>
                 </div>
             </div>
         </div>
@@ -166,29 +216,29 @@
             <p class="section-subtitle">Mantente actualizado sobre la campaña</p>
             
             <div class="social-grid">
-                <a href="#" class="social-card instagram">
+                <a href="https://www.facebook.com/share/17fx79inF2/" target="_blank" rel="noopener noreferrer" class="social-card facebook">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Delta Kairos</p>
+                </a>
+
+                <a href="https://www.instagram.com/delta.kairos?igsh=N2Rjdnl4dGwxeDJ0" target="_blank" rel="noopener noreferrer" class="social-card instagram">
                     <i class="fab fa-instagram"></i>
                     <h3>Instagram</h3>
-                    <p>@consejeros2025</p>
+                    <p>@delta.kairos</p>
                 </a>
 
-                <a href="#" class="social-card tiktok">
+                <a href="https://www.tiktok.com/@planilla.azul7?_t=ZS-90lqVsxFesc&_r=1" target="_blank" rel="noopener noreferrer" class="social-card tiktok">
                     <i class="fab fa-tiktok"></i>
                     <h3>TikTok</h3>
-                    <p>@consejeros2025</p>
-                </a>
-
-                <a href="#" class="social-card twitter">
-                    <i class="fab fa-twitter"></i>
-                    <h3>Twitter/X</h3>
-                    <p>@consejeros2025</p>
+                    <p>@planilla.azul7</p>
                 </a>
             </div>
 
             <div class="call-to-action">
-                <h3>¿Listo para hacer la diferencia?</h3>
-                <p>Votanos el [FECHA DE VOTACIÓN]</p>
-                <button class="btn btn-primary btn-large">Más Información</button>
+                <h2>¡Construyamos juntos la facultad que merecemos!</h2>
+                <p class="cta-slogan"><strong>Somos Delta-Kairos. Somos Tu Voz.</strong></p>
+                <button class="btn btn-primary btn-large" onclick="scrollToSection('propuestas')">Conoce Nuestras Propuestas</button>
             </div>
         </div>
     </section>
@@ -196,10 +246,24 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Campaña Consejeros Universitarios. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Planilla Azul Delta-Kairos - Tu Voz Importa. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    
+    <!-- Script de respaldo para navegación -->
+    <script>
+        // Asegurar que la función esté disponible inmediatamente
+        if (typeof window.scrollToSection === 'undefined') {
+            console.log('⚠️ Cargando función de scroll de respaldo');
+            window.scrollToSection = function(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            };
+        }
+    </script>
 </body>
 </html>

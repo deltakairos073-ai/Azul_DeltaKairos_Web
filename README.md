@@ -1,7 +1,7 @@
-# Campaña Consejeros Universitarios 2025
+# Planilla Azul Delta-Kairos 2025
 
 ## 📱 Descripción
-Sitio web moderno para la campaña de elecciones de consejeros universitarios. Diseño responsivo y atractivo para conectar con el público joven.
+Sitio web oficial de la Planilla Azul Delta-Kairos para las elecciones de consejeros universitarios de la Facultad de Ingeniería, UASLP. Diseño profesional, moderno y responsivo con la identidad visual de Delta-Kairos.
 
 ## 🎨 Características
 
